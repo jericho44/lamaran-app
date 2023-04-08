@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LamaranController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +15,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('app');
+    return redirect();
 });
+
+Route::resource('lamaran', '\App\Http\Controllers\LamaranController')
+    ->except('store', 'create', 'show', 'edit', 'destory', 'update');

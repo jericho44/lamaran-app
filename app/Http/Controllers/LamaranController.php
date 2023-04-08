@@ -1,13 +1,12 @@
 <?php
 
-namespace App\Http\Controllers\API;
+namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
 use App\Models\Job;
 use App\Models\Skill;
 use Illuminate\Http\Request;
 
-class CandidateController extends Controller
+class LamaranController extends Controller
 {
     /**
      * Display a listing of the resource.
