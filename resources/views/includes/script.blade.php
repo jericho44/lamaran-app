@@ -18,5 +18,17 @@
         integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
     </script>
     -->
+<!-- Select 2 -->
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<!-- Datepicker -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.5.0/js/bootstrap-datepicker.js"></script>
 
+<script src="{{ asset('assets/js/yearpicker.js') }}"></script>
 <script src="{{ asset('assets/js/main.js') }}"></script>
+
+<script>
+    $(function() {
+        $('.select2').select2()
+        $('#year').yearpicker();
+    })
+</script>

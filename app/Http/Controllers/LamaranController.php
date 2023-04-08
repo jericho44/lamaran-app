@@ -18,7 +18,7 @@ class LamaranController extends Controller
         $jobs = Job::orderBy('name', 'ASC')->get();
         $skills = Skill::orderBy('name', 'ASC')->get();
 
-        return view('pages.index', compact('jobs'));
+        return view('pages.index', compact('jobs', 'skills'));
     }
 
     /**
